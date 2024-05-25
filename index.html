@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Newsletter sign-up form</title>
+  </head>
+  <body class="md:bg-darkSlateGrey flex  items-center justify-center md:h-screen">
+    <form id="signupForm" role="main" class=" bg-White  rounded-[28px] flex flex-col   md:flex-row">
+      <img src="images/illustration-sign-up-mobile.svg" alt="" class="md:hidden scale-110">
+      
+      <div class="flex flex-col  px-2 md:px-16 md:py-20">
+        <h1 class="  text-5xl  text-darkSlateGrey mt-12 md:mt-5 font-semibold md:text-6xl">Stay updated!</h1>
+        <p class=" max-w-xs text-darkSlateGrey text-[16px] py-5">
+          Join 60,000+ product manager receiving monthly updates on:
+
+        </p>
+        
+        <div class="flex items-start  space-x-4">
+          <img src="images/icon-list.svg" alt="">
+         
+            <p class="max-w-72 text-darkSlateGrey text-[16px] md:max-w-xs">
+              Product discovery and building what matters
+            </p>
+
+         
+        </div>
+        <div class="flex items-start py-1 space-x-4">
+          <img src="images/icon-list.svg" alt="">
+         
+         
+            <p class="max-w-64 text-darkSlateGrey text-[16px]  md:max-w-xs ">
+            Measuring to ensure updates are a success
+          </p>
+        </div>
+        <div class="flex items-center pb-8 space-x-4">
+          <img src="images/icon-list.svg" alt="">
+          <p class="max-w-md text-darkSlateGrey text-[16px]">
+            And much more!
+          </p>
+        </div>
+       
+
+          <div class="flex flex-col space-y-1 w-full">
+            <div class="flex items-center justify-between">
+              <label for="email" class="text-darkSlateGrey font-semibold">
+                Email address </label
+              >
+              
+              <span id="emailError" class="text-Tomato text-sm hidden"
+                >valid email required
+              </span>
+  
+            </div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="rounded-lg border border-gray-300 p-4 outline-none"
+              required
+              aria-describedby="emailError" placeholder="email@company.com"
+            />
+          </div>
+          <button class="block w-full p-4 bg-darkSlateGrey text-White font-semibold mt-5 rounded-lg shadow duration-200 transition-all hover:bg-gradient-to-r from-hoverPink to-orange-400 hover:shadow-2xl">Subscribe to monthly newsletter</button>
+        
+      </div>
+      <img src="images/illustration-sign-up-desktop.svg" alt="" class="hidden md:block mr-5 my-5">
+    </form>
+    <!--  Success Message -->
+    <section id="successMessage"  class=" bg-White hidden pt-44 md:p-10  md:rounded-3xl">
+      <div>
+        <img src="images/icon-success.svg" alt="" class="md:h-9">
+
+      </div>
+
+      <h1 class="text-darkSlateGrey max-w-72 pt-8 pb-7 text-4xl md:text-5xl font-bold md:pt-6 md:pb-5">
+        Thanks for subscribing!
+      </h1>
+      <p id="successText" class="text-darkSlateGrey pb-72  text-md md:text-xs max-w-xs md:max-w-72 md:pb-8">
+        A confirmation email has been sent to <span class=" hidden font-semibold">email@company.com</span>. Please open it and click the button inside  to confirm your subscription
+      </p>
+
+      <button id="dismissButton" class="block w-full p-4 md:p-3 mb-3 bg-darkSlateGrey text-White font-semibold  rounded-lg shadow duration-200 transition-all hover:bg-gradient-to-r from-hoverPink to-orange-400 hover:shadow-2xl">Dismiss message</button>
+    </section>
+  </body>
+</html>
