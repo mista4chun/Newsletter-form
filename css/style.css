@@ -647,9 +647,19 @@ video {
   border-width: 1px;
 }
 
+.border-Tomato {
+  --tw-border-opacity: 1;
+  border-color: hsl(4 100% 67% / var(--tw-border-opacity));
+}
+
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.border-darkSlateGrey {
+  --tw-border-opacity: 1;
+  border-color: hsl(234 29% 20% / var(--tw-border-opacity));
 }
 
 .bg-White {
@@ -660,6 +670,11 @@ video {
 .bg-darkSlateGrey {
   --tw-bg-opacity: 1;
   background-color: hsl(234 29% 20% / var(--tw-bg-opacity));
+}
+
+.bg-Tomato {
+  --tw-bg-opacity: 1;
+  background-color: hsl(4 100% 67% / var(--tw-bg-opacity));
 }
 
 .from-hoverPink {
@@ -782,6 +797,31 @@ video {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.focus\:border-darkSlateGrey:focus {
+  --tw-border-opacity: 1;
+  border-color: hsl(234 29% 20% / var(--tw-border-opacity));
+}
+
+.focus\:bg-Tomato:focus {
+  --tw-bg-opacity: 1;
+  background-color: hsl(4 100% 67% / var(--tw-bg-opacity));
+}
+
+.focus\:ring-darkSlateGrey:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: hsl(234 29% 20% / var(--tw-ring-opacity));
+}
+
+.active\:border-darkSlateGrey:active {
+  --tw-border-opacity: 1;
+  border-color: hsl(234 29% 20% / var(--tw-border-opacity));
+}
+
+.active\:bg-Tomato:active {
+  --tw-bg-opacity: 1;
+  background-color: hsl(4 100% 67% / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px) {
